@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Bodytec Link Generator",
+  "version": "1.0",
+  "description": "Generates a link to edit Bodytec posts based on the shortlink",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab","scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://bodytec.co.za/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
